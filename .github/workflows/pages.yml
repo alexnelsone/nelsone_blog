@@ -31,7 +31,6 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
-      - run: cd ./src
       - name: Install Dependencies
         run: npm install
       - name: Build
