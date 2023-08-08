@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main  # default branch
+defaults:
+  run:
+    shell: bash
+    working-directory: src
 
 jobs:
   pages:
